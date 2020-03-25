@@ -1,0 +1,6 @@
+<!doctype html>   <!--  wjd2.html -->
+<html 1 lang="ko">
+<head>
+ <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+ <style>
+  function event1onclick(){   document.getElementByld("id_1").innerHTML
