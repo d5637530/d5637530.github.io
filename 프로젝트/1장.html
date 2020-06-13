@@ -1,0 +1,65 @@
+<!doctype html> <!-- basicSemantic5.html-->
+<html>
+<head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+ header, nav, section, article, aside, footer
+ {border: 1px solid gray; margin:5px; padding:8px; width:1000px;}  
+ header h2 { float:left; border:solid 1px gray; margin:0 0 0 0; }
+ header #headMenu { float:right; border:solid 1px gray; margin:20px 0 0 0; }
+ header ul { margin:0; padding:0;}
+ header ul li {display:inline; margin:5px;}
+ header img { width:990px; height:200px; }
+ section {width:750px; float:left; }
+ section section { width:725px; float:left; }
+ aside { width:221px; float:left; line-height:30px; }
+ footer {height:50px; clear:both; }
+ nav ul {margin:0; padding:0;}
+ nav ul li {display:inline; margin:5px;}
+ aside ul {margin:0; padding:0;}
+ aside ul li {display:block; margin:5px;}
+ aside ul li img { width:100px; height:100px; }
+ table, th, td {border:1px solid black; border-collapse: collapse;} table {width:100%;}
+ th, td {text-align:center; padding:10px; vertical-align:bottom;}
+ tr:nth-child(odd) {background-color: lightgray;}
+ th {background-color: gray; color: white;}
+ table.ex1 {table-layout: auto;} table.ex2 {table-layout:gixed;}
+ a:link { color:blue; background-color:transparent; text-decoration:none; }
+ a:visited { color:pink; background-color:transparent; text-decoration:none;}
+ a:hover { color:red; background-color:transparent; text-decoration:underline;}
+ a:active { color:blue; background-color:transparent; text-decoration:none;}
+</style>
+<title>시멘틱 학습</title></head>
+<body>
+ <header>
+  <h2><a href="https://d5637530.github.io/html5/basicSemantic5.html">개인 프로젝트 홈페이지 입니다</a></h2>
+  <ul id="headMenu">
+   <li>로그인|</li>
+   <li><a href="https://d5637530.github.io/html5/basicSemanticMember1.html">회원가입</a>|</li>
+   <li>사이트맵</li>
+   </ul>
+  <img src="../다운로드.jfif" alt="컴퓨터 공학과"/>
+ </header>
+ <nav>
+  <ul>
+  <li><a href="#chapter1">제1장이동</a></li>
+  <li><a href="#chapter1">제2장이동</a></li>
+  <li><a href="#chapter1">제3장이동</a></li>
+  <li><a href="#chapter1">제4장이동</a></li>
+ </nav>
+   <section> <!-- main -->
+  <section><h3 id="chapter1">수강(예정)인 과목</h3>
+  <p>수강(예정)과목은 2학기가 되면서 2학년 수업을 듣을수 있다면 2학년 위주로 2~4개 
+  3학년 2~3개 하면서 하고 나머지는 부족한 점수는 교양과목으로 할거 같습니다.</p>
+  <div style="overflow-x:auto;">
+ <table class="ex2">
+ <tr><th>3학년</th><th></th><th></th><th></th><th></th><th></th></tr>
+ <tr><td>2학년</td><td>java 프로그래밍</td><td>데이터 모델링</td><td>알고리즘 및 실습</td<td원도우 프로그래밍</td<td교양과목</td</tr>
+ <tr><td>3학년</td><td>컴퓨터 그래픽스</td><td>비즈니스 프로세스 관리</td><td>네트워크와 데이터 통신</td><td></td><td>교양과목</td</tr></div>
+  </section>
+  </section> <!-- /main -->
+    <footer>
+    <p>&copy; 2020 Made by Korea. All rights reserved.</p>
+  </footer>
+  </body>
+</html>
