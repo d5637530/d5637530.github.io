@@ -1,0 +1,34 @@
+<!doctype html> <!-- tset.html2-->
+<html><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+aside ul {margin:0; padding:0;}
+aside ul li{display:block; margin:5px;}
+aside ul li img {width:50px; height:50px;}
+</style>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Kakao 지도 시작하기</title>
+</head>
+<body>
+	<div id="map" style="width:1200px;height:800px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c569087d456876db9dab9dfd51554e6c"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+  <aside>
+   <ul>
+    <li><a href=https://www.google.com><img src="https://user-images.githubusercontent.com/62532403/80092602-039a6b00-859e-11ea-9640-204dfbbd2485.png" alt="구글"/><a/></li>
+    <li><a herf=https://www.facebook.com><img src="https://user-images.githubusercontent.com/62532403/80092544-ed8caa80-859d-11ea-96a3-1db06bc448aa.png" alt="페이스북"/></a></li>
+    <li><a href=https://www.Twitter.com><img src="https://user-images.githubusercontent.com/62532403/80092606-05fcc500-859e-11ea-86f7-2f6c8aef45b5.png" alt="트위터"/></a></li>
+   </ul>  
+  </aside>
+</body>
+</html>
