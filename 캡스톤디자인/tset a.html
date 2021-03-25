@@ -3,9 +3,8 @@
 <head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style>
-section,aside
+aside
 {border:1px solid gray; margin:5px; padding:8px; width:850px;}
-section {width:750px; float:left;}
 aside { width:200px; float:left; line-height:30px; }
 aside ul {marhin:0; padding:0;}
 aside ul li {display:block; margin:5px;}
@@ -13,7 +12,6 @@ aside ul li {display:block; margin:5px;}
 	<title>Kakao 지도 시작하기</title>
 </head>
 <body>
-	<section>
 	<div id="map" style="width:1000px;height:920px;"></div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c569087d456876db9dab9dfd51554e6c"></script>
 	<script>
@@ -24,7 +22,7 @@ aside ul li {display:block; margin:5px;}
 		};
 
 		var map = new kakao.maps.Map(container, options);
-	 </script> <section/>
+	 </script> 
   <aside>
   <ul>
   <li>GooglePlus</li>
