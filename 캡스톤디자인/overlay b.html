@@ -5,10 +5,12 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Kakao 지도 시작하기</title>
+	
 </head>
 <body>
 	<div id="map" style="width:1200px;height:800px;"></div>
-  <p><em>시청에 마우스 커서를 올려주세요~</em></p> 
+        <p><em>시청에 마우스 커서를 올려주세요~</em></p>
+	
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c569087d456876db9dab9dfd51554e6c"></script>
 	<script>
 	var mapContainer = document.getElementById('map'),
@@ -16,7 +18,9 @@
         center: new kakao.maps.LatLng(36.350382, 127.384488), 
         level: 2 
     };
+		
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+		
 var markerPosition  = new kakao.maps.LatLng(36.350536, 127.384802); 
 
 var marker = new kakao.maps.Marker({
