@@ -3,13 +3,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Kakao 지도 시작하기</title>
 </head>
 <body>
 	<div id="map" style="width:1150px;height:800px;"></div>
   <p>
-    <button onclick="CityHall()">처음 화면으로</button> 
-    <button onclick="Duncho()">둔산 초등학교로 이동</button> 
+    <button onclick="CsetCenter()">처음 화면으로</button> 
+    <button onclick="panTo()">둔산 초등학교로 이동</button> 
 </p>
   
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c569087d456876db9dab9dfd51554e6c"></script>
@@ -21,17 +22,22 @@
     };
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
      
-// 이동할 위도 경도 위치 생성
-    function CityHall() {            
-    var moveLatLon = new kakao.maps.LatLng(36.350527, 127.384850);
+function setCenter() {            
+    // 이동할 위도 경도 위치를 생성합니다 
+    var moveLatLon = new kakao.maps.LatLng(33.452613, 126.570888);
     
-    map.CityHall(moveLatLon);
+    // 지도 중심을 이동 시킵니다
+    map.setCenter(moveLatLon);
 }
-function Duncho() {
-    var moveLatLon = new kakao.maps.LatLng(36.349831, 127.381320);
+
+function panTo() {
+    // 이동할 위도 경도 위치를 생성합니다 
+    var moveLatLon = new kakao.maps.LatLng(33.450580, 126.574942);
     
-    map.Duncho(moveLatLon);            
-}
+    // 지도 중심을 부드럽게 이동시킵니다
+    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
+    map.panTo(moveLatLon);            
+}        
 // 여러개 마커 등록
 var positions = [
     {
