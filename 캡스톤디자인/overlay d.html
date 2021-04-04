@@ -9,8 +9,8 @@
 <body>
 	<div id="map" style="width:1150px;height:800px;"></div>
   <p>
-    <button onclick="시청()">처음 화면으로</button> 
-    <button onclick="둔산초등학교()">둔산 초등학교로 이동</button> 
+    <button onclick="City Hall()">처음 화면으로</button> 
+    <button onclick="Duncho()">둔산 초등학교로 이동</button> 
 </p>
   
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c569087d456876db9dab9dfd51554e6c"></script>
@@ -25,12 +25,12 @@ var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니
     function setCenter() {            
     var moveLatLon = new kakao.maps.LatLng(36.350527, 127.384850);
     
-    map.시청(moveLatLon);
+    map.City Hall(moveLatLon);
 }
 function panTo() {
     var moveLatLon = new kakao.maps.LatLng(36.349831, 127.381320);
     
-    map.둔산초등학교(moveLatLon);            
+    map.Duncho(moveLatLon);            
 }
 // 여러개 마커 등록
 var positions = [
