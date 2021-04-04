@@ -1,0 +1,43 @@
+<!doctype html> <!-- overlay b.html-->
+<html><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Kakao 지도 시작하기</title>
+</head>
+<body>
+	<div id="map" style="width:1200px;height:800px;"></div>
+  <p><em>시청에 마우스 커서를 올려주세요~</em></p> 
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c569087d456876db9dab9dfd51554e6c"></script>
+	<script>
+	var mapContainer = document.getElementById('map'),
+          mapOption = { 
+        center: new kakao.maps.LatLng(36.350382, 127.384488), 
+        level: 2 
+    };
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+var markerPosition  = new kakao.maps.LatLng(36.350536, 127.384802); 
+
+var marker = new kakao.maps.Marker({
+  position: position
+});
+
+marker.setMap(map);
+
+var iwContent = '<div style="padding:5px;">시청 입니다!</div>'; 
+
+var infowindow = new kakao.maps.InfoWindow({
+    content : iwContent
+});
+
+kakao.maps.event.addListener(marker, 'mouseover', function() {
+    infowindow.open(map, marker);
+});
+    
+kakao.maps.event.addListener(marker, 'mouseout', function() {
+    infowindow.close();
+});
+	</script>
+</body>
+</html>
