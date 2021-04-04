@@ -9,7 +9,7 @@
 <body>
 	<div id="map" style="width:1150px;height:800px;"></div>
   <p>
-    <button onclick="City Hall()">처음 화면으로</button> 
+    <button onclick="시청()">처음 화면으로</button> 
     <button onclick="Duncho()">둔산 초등학교로 이동</button> 
 </p>
   
@@ -22,12 +22,12 @@
     };
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
      // 이동할 위도 경도 위치 생성
-    function setCenter() {            
+    function 시청() {            
     var moveLatLon = new kakao.maps.LatLng(36.350527, 127.384850);
     
-    map.City Hall(moveLatLon);
+    map.시청(moveLatLon);
 }
-function panTo() {
+function Duncho() {
     var moveLatLon = new kakao.maps.LatLng(36.349831, 127.381320);
     
     map.Duncho(moveLatLon);            
