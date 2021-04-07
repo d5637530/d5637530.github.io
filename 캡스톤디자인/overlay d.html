@@ -88,6 +88,14 @@ function makeOutListener(infowindow) {
         infowindow.close();
     };
 }
+		
+// 줌 드래그 기능 없애기
+
+chart.maxZoomLevel = 1;
+
+chart.seriesContainer.draggable = false;
+
+chart.seriesContainer.resizable = false;
 </script>
 </body>
 </html>
